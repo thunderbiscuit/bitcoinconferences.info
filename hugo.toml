@@ -1,0 +1,11 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Bitcoin Conferences"
+theme = "yinyang"
+buildFuture = true
+
+[params]
+  headTitle = "Bitcoin Conferences"
+# [[params.socials]]
+#   name = "Add"
+#   link = "https://github.com"
