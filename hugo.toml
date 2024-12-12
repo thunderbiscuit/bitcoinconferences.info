@@ -6,6 +6,8 @@ buildFuture = true
 
 [params]
   headTitle = "Bitcoin Conferences"
+  extraCSSFiles = ["css/custom.css"]
+
 # [[params.socials]]
 #   name = "Add"
 #   link = "https://github.com"
