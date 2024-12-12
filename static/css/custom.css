@@ -6,4 +6,11 @@
 
 .posts-line:hover {
   background-color: lightgray;
+  /* border: 2px solid; */
+  /* border-color: gray; */
+}
+
+a:hover {
+  font-weight: 400;
+  text-decoration: underline;
 }

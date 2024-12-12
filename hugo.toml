@@ -7,7 +7,9 @@ buildFuture = true
 [params]
   headTitle = "Bitcoin Conferences"
   extraCSSFiles = ["css/custom.css"]
+  extraHead = '<script defer data-domain="bitcoinconferences.info" src="https://plausible.io/js/script.js"></script>'
+  description = "A simple list of upcoming bitcoin conferences worldwide"
 
-# [[params.socials]]
-#   name = "Add"
-#   link = "https://github.com"
+[[params.socials]]
+  name = "Add a conference"
+  link = "https://github.com"
