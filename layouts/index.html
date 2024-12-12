@@ -11,8 +11,7 @@
         <div id="posts-list">
           {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
           <section>
-            <!-- <h1 class="site-date-catalog">{{ .Key }}</h1> -->
-            {{ range .Pages }}
+            {{ range .Pages.ByDate }}
             <div class="row posts-line">
               <div class="posts-date col-xs-3 col-sm-2">
                 <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02, 2006"}}</time>
@@ -26,11 +25,6 @@
                     <div class="posts-category">
                       <a href=""><strong>{{ .Params.location }}</strong></a>
                     </div>
-                    <!-- {{ range .Params.categories }}
-                    <div class="posts-category">
-                      <a href="/categories/{{ lower . }}/"><strong>{{ . }}</strong></a>
-                    </div>
-                    {{ end }} -->
                   </div>
                 </div>
               </div>
