@@ -12,6 +12,7 @@
           {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
           <section>
             {{ range .Pages.ByDate }}
+            <a href="{{ .Params.link }}" target="_blank">
             <div class="row posts-line">
               <div class="posts-date col-xs-3 col-sm-2">
                 <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02, 2006"}}</time>
@@ -19,16 +20,19 @@
               <div class="posts-title col-xs-9 col-sm-10">
                 <div class="row">
                   <div class="col-xs-11 col-sm-9">
-                    <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+                    <p>{{ .Title }}</p>
+                    <!-- <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a> -->
                   </div>
                   <div class="col-xs-1 col-sm-3 posts-categories">
                     <div class="posts-category">
-                      <a href=""><strong>{{ .Params.location }}</strong></a>
+                      <p>{{ .Params.location }}</p>
+                      <!-- <a href="">{{ .Params.location }}</a> -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            </a>
             {{ end }}
           </section>
           {{ end }}

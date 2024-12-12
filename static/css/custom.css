@@ -12,5 +12,16 @@
 
 a:hover {
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: none;
+  /* text-decoration: underline; */
+}
+
+.posts-line p {
+  margin: 0;
+  padding: 0;
+}
+
+.posts-line {
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Center items vertically */
 }
