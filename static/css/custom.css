@@ -25,3 +25,9 @@ a:hover {
   display: flex; /* Use flexbox for better alignment */
   align-items: center; /* Center items vertically */
 }
+
+@media screen and (max-width: 48em) {
+  .posts-line .posts-category {
+    display: block;
+  }
+}
