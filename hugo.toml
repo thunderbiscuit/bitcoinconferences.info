@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://bitcoinconferences.info"
 languageCode = "en-us"
 title = "Bitcoin Conferences"
 theme = "yinyang"
@@ -12,4 +12,4 @@ buildFuture = true
 
 [[params.socials]]
   name = "Add a conference"
-  link = "https://github.com"
+  link = "https://github.com/thunderbiscuit/bitcoinconferences.info?tab=readme-ov-file#adding-a-conference"

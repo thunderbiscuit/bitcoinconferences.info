@@ -2,6 +2,8 @@
 
 I built this after trying to decide what conferences to go to for the upcoming year and realizing I couldn't find a simple list of upcoming conferences in bitcoin.
 
+<br>
+
 ## Adding a Conference
 
 This website is (hopefully!) community maintained. If you know of a bitcoin conference you'd like to see added to the site, you can:
