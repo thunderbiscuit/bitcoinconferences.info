@@ -1,6 +1,6 @@
 baseURL = "https://bitcoinconferences.info"
 languageCode = "en-us"
-title = "Bitcoin Conferences"
+title = "bitcoinconferences.info"
 theme = "yinyang"
 buildFuture = true
 
@@ -9,6 +9,8 @@ buildFuture = true
   extraCSSFiles = ["css/custom.css"]
   extraHead = '<script defer data-domain="bitcoinconferences.info" src="https://plausible.io/js/script.js"></script>'
   description = "A simple list of upcoming bitcoin conferences worldwide"
+  image = "/share-card.png"
+  favicon = "favicon.ico"
 
 [[params.socials]]
   name = "Add a conference"
