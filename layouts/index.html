@@ -9,9 +9,10 @@
         {{ partial "header.html" . }}
         <br>
         <div id="posts-list">
+          {{ $now := now }}
           {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
           <section>
-            {{ range .Pages.ByDate }}
+            {{ range where .Pages.ByDate "Date" "ge" $now }}
             <a href="{{ .Params.link }}" target="_blank">
             <div class="row posts-line">
               <div class="posts-date col-xs-3 col-sm-2">
