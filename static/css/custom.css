@@ -1,19 +1,21 @@
 .posts-line {
   padding: 6px 0;
   margin: 6px 0;
-  border-radius: 12px;
+}
+
+.posts-line {
+  transition: box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .posts-line:hover {
-  background-color: lightgray;
-  /* border: 2px solid; */
-  /* border-color: gray; */
+  box-shadow: 0 -2px 0 #b8b8b8, 0 2px 0 #b8b8b8;
+  background-color: #f2f2f2;
 }
 
 a:hover {
   font-weight: 400;
   text-decoration: none;
-  /* text-decoration: underline; */
 }
 
 .posts-line p {
@@ -22,8 +24,8 @@ a:hover {
 }
 
 .posts-line {
-  display: flex; /* Use flexbox for better alignment */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 48em) {
