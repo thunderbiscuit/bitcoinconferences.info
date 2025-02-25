@@ -3,7 +3,7 @@
 {{ partial "head.html" . }}
 
 <body>
-  <article class="posts">
+  <article class="posts" style="margin-bottom: 2rem;">
     <div class="row">
       <div class="col-xs-12">
         {{ partial "header.html" . }}
@@ -22,12 +22,13 @@
                 <div class="row">
                   <div class="col-xs-7 col-sm-8">
                     <p>{{ .Title }}</p>
-                    <!-- <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a> -->
                   </div>
-                  <div class="col-xs-5 col-sm-4 posts-categories">
-                    <div class="posts-category">
+                  <div class="col-xs-1 col-sm-1">
+                    <p style="font-size: 1.1em;">{{ .Params.flag }}</p>
+                  </div>
+                  <div class="col-xs-4 col-sm-3 posts-categories">
+                    <div class="posts-category city">
                       <p>{{ .Params.location }}</p>
-                      <!-- <a href="">{{ .Params.location }}</a> -->
                     </div>
                   </div>
                 </div>
