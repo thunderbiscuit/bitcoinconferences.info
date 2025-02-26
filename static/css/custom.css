@@ -28,6 +28,12 @@ a:hover {
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .city {
+    padding-left: 12px;
+  }
+}
+
 @media screen and (max-width: 48em) {
   .posts-line .posts-category {
     display: block;
