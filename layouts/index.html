@@ -11,10 +11,10 @@
         <div id="posts-list">
           {{ $now := now }}
           {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
-          <section>
-            {{ range where .Pages.ByDate "Date" "ge" $now }}
+          <section data-year="{{ .Key }}">
+            {{ range .Pages.ByDate }}
             <a href="{{ .Params.link }}" target="_blank">
-            <div class="row posts-line">
+            <div class="row posts-line {{ if lt .Date $now }}past-conference{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
               <div class="posts-date col-xs-3 col-sm-2">
                 <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02, 2006"}}</time>
               </div>
@@ -46,6 +46,48 @@
   </article>
 
   {{ partial "scripts.html" . }}
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const upcomingBtn = document.getElementById('upcoming-btn');
+      const allBtn = document.getElementById('all-btn');
+      const postsLines = document.querySelectorAll('.posts-line');
+      
+      function showUpcoming() {
+        upcomingBtn.classList.add('active');
+        allBtn.classList.remove('active');
+        
+        postsLines.forEach(line => {
+          if (line.classList.contains('past-conference')) {
+            line.parentElement.style.display = 'none';
+          } else {
+            line.parentElement.style.display = 'block';
+          }
+        });
+      }
+      
+      function showAll() {
+        allBtn.classList.add('active');
+        upcomingBtn.classList.remove('active');
+        
+        postsLines.forEach(line => {
+          line.parentElement.style.display = 'block';
+        });
+      }
+      
+      upcomingBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        showUpcoming();
+      });
+      allBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        showAll();
+      });
+      
+      // Initialize with upcoming view
+      showUpcoming();
+    });
+  </script>
 </body>
 
 </html>

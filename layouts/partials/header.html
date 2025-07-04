@@ -5,12 +5,18 @@
   </div>
   <div class="header-subtitle">{{ .Site.Params.Description }}</div>
 </header>
-<div class="row end-md header-items">
-  {{ range .Site.Params.socials }}
+<div class="row header-items" style="padding-top: 1rem;">
   <div class="header-item">
-    <a href="{{ .link }}" target="_blank">{{ .name }}</a>
+    <a href="#" id="upcoming-btn" class="filter-link active">Upcoming</a>
   </div>
-  {{ end }}
+  <div class="header-item">
+    <a href="#" id="all-btn" class="filter-link">All 2025</a>
+  </div>
+  <div class="header-item header-item-right">
+    {{ range .Site.Params.socials }}
+    <a href="{{ .link }}" target="_blank">{{ .name }}</a>
+    {{ end }}
+  </div>
 </div>
 <div class="row">
   {{ range .Site.Languages -}} {{ if ne .LanguageName $curLanguageName }}
