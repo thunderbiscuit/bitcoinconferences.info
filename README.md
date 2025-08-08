@@ -6,9 +6,9 @@ I built this website after trying to decide what conferences to go to for the up
 
 ## Adding a conference
 
-This website is (hopefully!) community maintained. If you know of a bitcoin conference you'd like to see added to the site, you can:
+This website is (hopefully!) community-maintained. If you know of a bitcoin conference you'd like to see added to the site, you can either:
 
-1. Open a PR adding a file in `content/posts/` with the follwing structure:
+1. Open a PR adding a file in `content/posts/` with the following structure (date: YYYY-MM-DD):
 
 ```md
 ---
