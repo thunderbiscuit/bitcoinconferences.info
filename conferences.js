@@ -296,6 +296,20 @@ const CONFERENCES = [
     "flag": "🇺🇸"
   },
   {
+    "title": "Bitcoin is for Everyone",
+    "link": "https://bitcoinisforeveryone.com/",
+    "date": "2026-05-22",
+    "location": "Portland",
+    "flag": "🇺🇸"
+  },
+  {
+    "title": "Bitcoin Ireland",
+    "link": "https://bitcoinireland.eu/",
+    "date": "2026-05-22",
+    "location": "Dublin",
+    "flag": "🇮🇪"
+  },
+  {
     "title": "bitcoin++ economics edition",
     "link": "https://btcplusplus.dev/conf/vienna",
     "date": "2026-05-27",
@@ -324,6 +338,13 @@ const CONFERENCES = [
     "flag": "🇰🇪"
   },
   {
+    "title": "Bitcoin Nairobi Conference",
+    "link": "https://bitcoinnairobiconference.com/",
+    "date": "2026-06-24",
+    "location": "Nairobi",
+    "flag": "🇰🇪"
+  },
+  {
     "title": "bitcoin++ consensus edition",
     "link": "https://btcplusplus.dev/conf/toronto",
     "date": "2026-07-22",
@@ -331,10 +352,94 @@ const CONFERENCES = [
     "flag": "🇨🇦"
   },
   {
+    "title": "Learning Bitcoin",
+    "link": "https://www.learningbitcoin.ca/",
+    "date": "2026-08-22",
+    "location": "Vancouver",
+    "flag": "🇨🇦"
+  },
+  {
+    "title": "Bitcoin Asia",
+    "link": "https://asia.b.tc/",
+    "date": "2026-08-27",
+    "location": "Hong Kong",
+    "flag": "🇭🇰"
+  },
+  {
+    "title": "BTCHEL",
+    "link": "https://btchel.com/",
+    "date": "2026-09-25",
+    "location": "Helsinki",
+    "flag": "🇫🇮"
+  },
+  {
     "title": "bitcoin++ payments edition",
     "link": "https://btcplusplus.dev/conf/berlin26",
     "date": "2026-10-01",
     "location": "Berlin",
     "flag": "🇩🇪"
+  },
+  {
+    "title": "The Canadian Bitcoin Conference",
+    "link": "https://canadianbitcoinconf.com/",
+    "date": "2026-10-02",
+    "location": "Toronto",
+    "flag": "🇨🇦"
+  },
+  {
+    "title": "TABConf 8",
+    "link": "https://8.tabconf.com",
+    "date": "2026-10-12",
+    "location": "Atlanta",
+    "flag": "🇺🇸"
+  },
+  {
+    "title": "Plan B Forum — Lugano",
+    "link": "https://planb.lugano.ch/planb-forum/",
+    "date": "2026-10-23",
+    "location": "Lugano",
+    "flag": "🇨🇭"
+  },
+  {
+    "title": "Bitcoin Alive",
+    "link": "https://bitcoinalive.io/",
+    "date": "2026-10-31",
+    "location": "Sydney",
+    "flag": "🇦🇺"
+  },
+  {
+    "title": "Bitcoin Amsterdam",
+    "link": "https://www.bitcoin.amsterdam/2026",
+    "date": "2026-11-05",
+    "location": "Amsterdam",
+    "flag": "🇳🇱"
+  },
+  {
+    "title": "Bitcoin Korea Conference",
+    "link": "https://www.bitcoinkoreaconference.com/en",
+    "date": "2026-11-07",
+    "location": "Seoul",
+    "flag": "🇰🇷"
+  },
+  {
+    "title": "Africa Bitcoin Conference",
+    "link": "https://afrobitcoin.org/",
+    "date": "2026-12-02",
+    "location": "Blantyre",
+    "flag": "🇲🇼"
+  },
+  {
+    "title": "Plan B Forum — El Salvador",
+    "link": "https://planb.sv/",
+    "date": "2027-01-29",
+    "location": "El Salvador",
+    "flag": "🇸🇻"
+  },
+  {
+    "title": "Adopting Bitcoin — Cape Town",
+    "link": "https://za27.adoptingbitcoin.org/",
+    "date": "2027-02-26",
+    "location": "Cape Town",
+    "flag": "🇿🇦"
   }
 ];
