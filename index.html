@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Conferences</title>
+  <meta name="description" content="A simple list of upcoming bitcoin conferences worldwide">
+  <meta property="og:title" content="Bitcoin Conferences">
+  <meta property="og:description" content="A simple list of upcoming bitcoin conferences worldwide">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/share-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bitcoin Conferences">
+  <meta name="twitter:description" content="A simple list of upcoming bitcoin conferences worldwide">
+  <meta name="twitter:image" content="assets/share-card.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-top">
+        <h1 class="site-title">Bitcoin Conferences</h1>
+        <p class="site-subtitle">A simple list of upcoming bitcoin conferences worldwide</p>
+      </div>
+      <nav class="filters">
+        <div class="filter-tabs">
+          <button id="btn-upcoming" class="filter-btn active">Upcoming</button>
+          <button id="btn-past" class="filter-btn">Past</button>
+        </div>
+        <a
+          href="https://github.com/thunderbiscuit/bitcoinconferences.info?tab=readme-ov-file#adding-a-conference"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="add-link"
+        >Add a conference ↗</a>
+      </nav>
+      <div class="header-rule"></div>
+    </header>
+
+    <main id="list" class="conference-list"></main>
+  </div>
+
+  <script src="conferences.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
