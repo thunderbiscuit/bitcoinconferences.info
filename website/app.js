@@ -27,7 +27,7 @@ function groupByYear(list) {
 
 // ── Rendering ────────────────────────────────────────────────────────────────
 
-function buildRow(conf, isNext, dimIfPast = true) {
+function buildRow(conf, dimIfPast = true) {
   const past = isPast(conf.date);
   const a = document.createElement('a');
   a.href = conf.link;
@@ -35,11 +35,9 @@ function buildRow(conf, isNext, dimIfPast = true) {
   a.rel = 'noopener noreferrer';
   a.className = 'conf-row' + (past && dimIfPast ? ' past' : '');
 
-  const nextBadge = isNext ? '<span class="next-badge">NEXT</span>' : '';
-
   a.innerHTML = `
     <span class="conf-date">${formatDate(conf.date)}</span>
-    <span class="conf-name">${conf.title}${nextBadge}</span>
+    <span class="conf-name">${conf.title}</span>
     <span class="conf-location">${conf.flag}&nbsp;${conf.location}</span>
   `;
   return a;
@@ -56,9 +54,7 @@ function render(conferences, { dimPast = true, emptyMsg = 'No conferences found.
 
   const sorted = [...conferences].sort((a, b) => a.date.localeCompare(b.date));
   const grouped = groupByYear(sorted);
-  const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
-
-  const nextConf = sorted.find(c => !isPast(c.date));
+  const years = Object.keys(grouped).sort((a, b) => Number(a) - Number(b));
 
   for (const year of years) {
     const section = document.createElement('section');
@@ -73,7 +69,7 @@ function render(conferences, { dimPast = true, emptyMsg = 'No conferences found.
     `;
 
     for (const conf of grouped[year]) {
-      section.appendChild(buildRow(conf, conf === nextConf, dimPast));
+      section.appendChild(buildRow(conf, dimPast));
     }
 
     list.appendChild(section);
