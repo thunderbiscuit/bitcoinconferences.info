@@ -34,6 +34,12 @@
   location: "Kreuzlingen"
   flag: "🇨🇭"
 
+- title: "BTC Prague 2027"
+  link: "https://btcprague.com"
+  date: "2027-05-06"
+  location: "Prague"
+  flag: "🇨🇿"
+
 - title: "Bitcoin FilmFest 2027"
   link: "https://bitcoinfilmfest.com/27/"
   date: "2027-06-24"
