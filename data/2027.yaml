@@ -28,6 +28,12 @@
   location: "Queenstown"
   flag: "🇳🇿"
 
+- title: "Swiss Bitcoin Conference"
+  link: "https://www.swiss-bitcoin-conference.com/"
+  date: "2027-04-23"
+  location: "Kreuzlingen"
+  flag: "🇨🇭"
+
 - title: "Bitcoin FilmFest 2027"
   link: "https://bitcoinfilmfest.com/27/"
   date: "2027-06-24"
