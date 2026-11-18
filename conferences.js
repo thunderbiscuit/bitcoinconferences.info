@@ -429,6 +429,13 @@ const CONFERENCES = [
     "flag": "🇲🇼"
   },
   {
+    "title": "BitcoinDay Naples",
+    "link": "https://bitcoinday.io/",
+    "date": "2027-01-16",
+    "location": "Naples",
+    "flag": "🇺🇸"
+  },
+  {
     "title": "Plan B Forum — El Salvador",
     "link": "https://planb.sv/",
     "date": "2027-01-29",
@@ -441,6 +448,13 @@ const CONFERENCES = [
     "date": "2027-02-26",
     "location": "Cape Town",
     "flag": "🇿🇦"
+  },
+  {
+    "title": "BitBlockBoom",
+    "link": "https://bitblockboom.com",
+    "date": "2027-04-01",
+    "location": "Fort Worth",
+    "flag": "🇺🇸"
   },
   {
     "title": "Bitcoin FilmFest 2027",
