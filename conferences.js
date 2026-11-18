@@ -457,6 +457,34 @@ const CONFERENCES = [
     "flag": "🇺🇸"
   },
   {
+    "title": "Sovereignty Summit",
+    "link": "https://sovereigntysummit.nz/",
+    "date": "2027-04-02",
+    "location": "Queenstown",
+    "flag": "🇳🇿"
+  },
+  {
+    "title": "Swiss Bitcoin Conference",
+    "link": "https://www.swiss-bitcoin-conference.com/",
+    "date": "2027-04-23",
+    "location": "Kreuzlingen",
+    "flag": "🇨🇭"
+  },
+  {
+    "title": "BTC Prague 2027",
+    "link": "https://btcprague.com",
+    "date": "2027-05-06",
+    "location": "Prague",
+    "flag": "🇨🇿"
+  },
+  {
+    "title": "Adopting Bitcoin — Netherlands",
+    "link": "https://nl27.adoptingbitcoin.org/",
+    "date": "2027-05-28",
+    "location": "Arnhem",
+    "flag": "🇳🇱"
+  },
+  {
     "title": "Bitcoin FilmFest 2027",
     "link": "https://bitcoinfilmfest.com/27/",
     "date": "2027-06-24",
